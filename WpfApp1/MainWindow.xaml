@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="날씨 검색기" Height="250" Width="400">
+    <Grid>
+        <Label Content="도시 이름:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,50,0,0" />
+        <TextBox x:Name="cityTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200"
+                 Margin="130,50,0,0" KeyUp="CityTextBox_KeyUp" />
+        <Button Content="검색" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="30"
+                Margin="50,100,0,0" Click="Button_Click" />
+        <TextBlock x:Name="resultTextBlock" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,150,0,0" />
+        <ProgressBar x:Name="loadingProgressBar" IsIndeterminate="True" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="20" Margin="50,150,0,0" Visibility="Collapsed"/>
+    </Grid>
+</Window>
