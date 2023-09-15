@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="날씨 검색기" Height="250" Width="400">
+        Title="날씨 검색기" Height="250" Width="400"
+        WindowStartupLocation="CenterScreen">
     <Grid>
         <Label Content="도시 이름:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,50,0,0" />
         <TextBox x:Name="cityTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200"
